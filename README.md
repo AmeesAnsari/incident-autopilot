@@ -1,5 +1,7 @@
 # incident-autopilot
 
+[![CI](https://github.com/AmeesAnsari/incident-autopilot/actions/workflows/ci.yml/badge.svg)](https://github.com/AmeesAnsari/incident-autopilot/actions/workflows/ci.yml) ![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue) [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+
 Monitoring alerts in, **grouped incidents that resolve themselves** out.
 
 A NOC typically gets one ticket per alarm: 40 tickets for one network outage, duplicates for every repeat alert, and engineers closing them by hand once things recover. This service sits between monitoring (PRTG or anything that can POST a webhook) and the ITSM (ServiceNow, or a built-in mock) and manages the whole incident lifecycle.
